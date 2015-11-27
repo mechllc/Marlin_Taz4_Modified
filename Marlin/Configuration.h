@@ -8,7 +8,7 @@
 //===========================================================================
 //============================= DELTA Printer ===============================
 //===========================================================================
-// For a Delta printer rplace the configuration files wilth the files in the
+// For a Delta printer replace the configuration files wilth the files in the
 // example_configurations/delta directory.
 //
 
@@ -16,7 +16,7 @@
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(Aleph Objects, Inc, TAZ  config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Mechanical Solutions, LLC, TAZ4 enlcosure  config)" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -74,14 +74,14 @@
 #endif
 
 // Define this to set a custom name for your generic Mendel,
-#define CUSTOM_PRINTER_NAME "TAZ"
+#define CUSTOM_PRINTER_NAME "Rad Taz"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
 // #define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
 
 // This defines the number of extruders
-#define EXTRUDERS 1
+#define EXTRUDERS 2
 
 //// The following define selects which power supply you have. Please choose the one that matches your setup
 // 1 = ATX
@@ -122,7 +122,7 @@
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan & J-Head) (1k pullup)
 
 #define TEMP_SENSOR_0 7
-#define TEMP_SENSOR_1 7
+#define TEMP_SENSOR_1 5
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 7
 
@@ -147,7 +147,7 @@
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
 #define HEATER_0_MAXTEMP 250
-#define HEATER_1_MAXTEMP 250
+#define HEATER_1_MAXTEMP 80
 #define HEATER_2_MAXTEMP 250
 #define BED_MAXTEMP 150
 
